@@ -5,15 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../utils/global.css">
   <link rel="stylesheet" href="cadastrar-condomino.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-  <title>Consultar Condôminos - Minha Morada</title>
+  <title>Condôminos - Minha Morada</title>
 </head>
 <body>
+
   <!-- Header Section -->
   <header class="header">
     <div class="container">
-      <a href="/index.html">
+      <a href="../home/index.html">
         <div class="header-logo">
           <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
             width="80px" height="80px" viewBox="0 0 157.000000 76.000000"
@@ -55,60 +59,62 @@
 
   <div class="menu">
     <div class="container">
-      <div class="menu-item">
-        <div class="menu-item-image">
-          <img src="assets/icons/condominium/condominium.svg" alt="Condomínios">
-        </div>
-        <span>Condomínios</span>
-      </div>
-      <div class="menu-item">
-        <div class="menu-item-image">
-          <img src="assets/icons/manager/sindico.svg" alt="Síndicos">
-        </div>
-        <span>Síndicos</span>
-      </div>
-      <div class="menu-item">
-        <div class="menu-item-image">
-          <img src="assets/icons/workers/workers.svg" alt="Funcionários">
-        </div>
-        <span>Funcionários</span>
-      </div>
-      <div class="menu-item">
-        <div class="menu-item-image">
-          <img src="assets/icons/apt/apt.svg" alt="Apartamentos">
-        </div>
-        <span>Apartamentos</span>
-      </div>
-      <div class="menu-item">
-        <div class="menu-item-image menu-active">
-          <img src="assets/icons/resident/resident.svg" alt="Condôminos">
-        </div>
-        <span>Condôminos</span>
-      </div>
-      <div class="menu-item">
-        <div class="menu-item-image">
-          <img src="assets/icons/playground/playground.svg" alt="Espaços">
-        </div>
-        <span>Espaços</span>
-      </div>
-      <div class="menu-item">
-        <div class="menu-item-image">
-          <img src="assets/icons/calendar/calendar.svg" alt="Agendar Espaço">
-        </div>
-        <span>Agendar Espaço</span>
-      </div>
-      <div class="menu-item">
-        <div class="menu-item-image">
-          <img src="assets/icons/assembly/assembly.svg" alt="Assembléias">
-        </div>
-        <span>Assembléias</span>
-      </div>
-      <div class="menu-item">
-        <div class="menu-item-image">
-          <img src="assets/icons/message/message.svg" alt="Mensagens">
-        </div>
-        <span>Mensagens</span>
-      </div>
+      <ul>
+        <li class="menu-item">
+          <div class="menu-item-image">
+            <img src="../../assets/icons/condominium/condominium.svg" alt="Condomínios">
+          </div>
+          <span class="menu-item-text">Condomínios</span>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-image">
+            <img src="../../assets/icons/manager/sindico.svg" alt="Síndicos">
+          </div>
+          <span class="menu-item-text">Síndicos</span>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-image">
+            <img src="../../assets/icons/workers/workers.svg" alt="Funcionários">
+          </div>
+          <span class="menu-item-text">Funcionários</span>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-image">
+            <img src="../../assets/icons/apt/apt.svg" alt="Apartamentos">
+          </div>
+          <span class="menu-item-text">Apartamentos</span>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-image">
+            <img src="../../assets/icons/resident/resident.svg" alt="Condôminos">
+          </div>
+          <span class="menu-item-text">Condôminos</span>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-image">
+            <img src="../../assets/icons/playground/playground.svg" alt="Espaços">
+          </div>
+          <span class="menu-item-text">Espaços</span>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-image">
+            <img src="../../assets/icons/calendar/calendar.svg" alt="Agendar Espaço">
+          </div>
+          <span class="menu-item-text">Agendar Espaço</span>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-image">
+            <img src="../../assets/icons/assembly/assembly.svg" alt="Assembléias">
+          </div>
+          <span class="menu-item-text">Assembléias</span>
+        </li>
+        <li class="menu-item">
+          <div class="menu-item-image">
+            <img src="../../assets/icons/message/message.svg" alt="Mensagens">
+          </div>
+          <span class="menu-item-text">Mensagens</span>
+        </li>
+      </ul>
     </div>
   </div>
 
@@ -153,13 +159,14 @@
             <span>Excluir</span>
           </div>
         </div>
+        
         <div class="main-box-content">
           <h2 class="main-box-content-title">Consultar Condômino</h2>
 
           <div class="main-box-content-half">
             <span class="main-box-content-item">
-              <span>Selecione o apartamento:</span>
-              <input type="text" id="n-ape" name="n-ape" placeholder="nº apto">
+              <!-- <span>Selecione o apartamento:</span>
+              <input type="text" id="n-ape" name="n-ape" placeholder="nº apto"> -->
             </span>
           </div>
           <div class="main-box-content-half">
@@ -201,5 +208,7 @@
     </div>
   </footer>
 
+
+  <script src="../../utils/menu.js"></script>
 </body>
 </html>
