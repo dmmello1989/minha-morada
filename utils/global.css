@@ -41,6 +41,11 @@ div.input {
   margin-bottom: 32px;
 }
 
+.input.edit {
+  width: auto;
+  margin-bottom: 0;
+}
+
 input {
   position: relative;
   width: 100%;
@@ -212,7 +217,7 @@ ul {
 
 .select {
   position: relative;
-  width: 300px;
+  width: 350px;
   border-radius: 8px;
 }
 
@@ -263,7 +268,7 @@ ul {
   background-color: rgba(0,0,0, 0.1);
 }
 
-/* Card */
+/* Card Person */
 
 .card {
   display: flex;
@@ -298,6 +303,12 @@ ul {
   font-weight: 800;
 }
 
+.card-button {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+
 /* Footer Section */ 
 #page-container {
   position: relative;
@@ -326,3 +337,4 @@ ul {
 .footer-right-icon {
   margin-left: 42px;
 }
+
