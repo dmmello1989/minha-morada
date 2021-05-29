@@ -45,8 +45,35 @@ body {
   font-size: 32px;
   margin-bottom: 24px;
 }
+.content-title {
+    font-size: 32px;
+    margin-bottom: 24px;
+}
 
 .content-container {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+}
+
+.content-half {
+  width: 50%;
+  padding: 0 8px;
+  overflow-y: auto;
+  
+}
+
+.content-item {
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+.content-item span {
+  display: block;
+  color: #757575;
+  margin-bottom: 8px;
+}
+
+.input.edit {
+  width: 78%;
+  margin-bottom: 32px;
 }

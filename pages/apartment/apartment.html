@@ -63,30 +63,6 @@
         <ul>
           <li class="menu-item">
             <div class="menu-item-image">
-              <img src="../../assets/icons/condominium/condominium.svg" alt="Condomínios">
-            </div>
-            <span class="menu-item-text">Condomínios</span>
-          </li>
-          <li class="menu-item">
-            <div class="menu-item-image">
-              <img src="../../assets/icons/manager/sindico.svg" alt="Síndicos">
-            </div>
-            <span class="menu-item-text">Síndicos</span>
-          </li>
-          <li class="menu-item">
-            <div class="menu-item-image">
-              <img src="../../assets/icons/workers/workers.svg" alt="Funcionários">
-            </div>
-            <span class="menu-item-text">Funcionários</span>
-          </li>
-          <li class="menu-item">
-            <div class="menu-item-image">
-              <img src="../../assets/icons/apt/apt.svg" alt="Apartamentos">
-            </div>
-            <span class="menu-item-text">Apartamentos</span>
-          </li>
-          <li class="menu-item">
-            <div class="menu-item-image">
               <img src="../../assets/icons/resident/resident.svg" alt="Condôminos">
             </div>
             <span class="menu-item-text">Condôminos</span>
@@ -102,6 +78,12 @@
               <img src="../../assets/icons/calendar/calendar.svg" alt="Agendar Espaço">
             </div>
             <span class="menu-item-text">Agendar Espaço</span>
+          </li>
+          <li class="menu-item">
+            <div class="menu-item-image">
+              <img src="../../assets/icons/apt/apt.svg" alt="Apartamentos">
+            </div>
+            <span class="menu-item-text">Apartamentos</span>
           </li>
           <li class="menu-item">
             <div class="menu-item-image">
@@ -171,16 +153,6 @@
             <div class="content-container">
               <div class="content-half">
                 <h2 class="content-title">Consultar Apartamento</h2>
-                <div class="content-item">
-                  <span>Selecione um condomínio:</span>
-                  <div class="select">
-                    <select name="condominium" id="condominium">
-                      <option value="0">Selecione um Condomínio:</option>
-                      <option value="1">Residencial Ilha das Flores</option>
-                      <option value="0">Condomínio Vila do Sol</option>
-                    </select>
-                  </div>
-                </div>
 
                 <div class="content-item">
                   <span>Selecione um apartamento:</span>
@@ -298,16 +270,6 @@
             <div class="content-container">
               <div class="content-half">
                 <h2 class="content-title">Cadastrar Apartamento</h2>
-                <div class="content-item">
-                  <span>Selecione um condomínio:</span>
-                  <div class="select">
-                    <select name="condominium" id="condominium">
-                      <option value="0">Selecione um Condomínio:</option>
-                      <option value="1">Residencial Ilha das Flores</option>
-                      <option value="0">Condomínio Vila do Sol</option>
-                    </select>
-                  </div>
-                </div>
 
                 <div class="content-item-inputs">
                   <div class="input">
@@ -352,17 +314,39 @@
             <div class="content-container">
               <div class="content-half">
                 <h2 class="content-title">Editar Apartamento</h2>
+
                 <div class="content-item">
-                  <span>Selecione um condomínio:</span>
+                  <span>Selecione um apartamento:</span>
                   <div class="select">
-                    <select name="condominium" id="condominium">
-                      <option value="0">Selecione um Condomínio:</option>
-                      <option value="1">Residencial Ilha das Flores</option>
-                      <option value="0">Condomínio Vila do Sol</option>
+                    <select name="apartment" id="apartment">
+                      <option value="0">Apartamentos:</option>
+                      <option value="1">101</option>
+                      <option value="2">102</option>
+                      <option value="3">103</option>
+                      <option value="4">104</option>
+                      <option value="5">201</option>
+                      <option value="6">202</option>
+                      <option value="7">203</option>
+                      <option value="8">204</option>
                     </select>
                   </div>
                 </div>
 
+                <div class="content-item">
+                  <span>Selecione o bloco:</span>
+                  <div class="select">
+                    <select name="block" id="block">
+                      <option value="0">Bloco:</option>
+                      <option value="1">A</option>
+                      <option value="2">B</option>
+                      <option value="3">C</option>
+                      <option value="4">D</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="content-half" style="display: flex; flex-direction: column; justify-content: space-between;margin-top: 32px;">
                 <div class="content-item-inputs">
                   <div class="input">
                     <input type="text" name="apartment" required>
@@ -377,10 +361,7 @@
                     <label for="garage">Vaga(s) garagem</label>
                   </div>
                 </div>
-              </div>
 
-
-              <div class="content-half" style="display: flex; flex-direction: column; justify-content: space-between;margin-top: 32px;">
                 <div class="content-item">
                   <span class="card-key" style="margin-bottom: 32px">Moradores:</span>
                   <div class="input" style="display: flex; justify-content: space-between;">
@@ -406,16 +387,6 @@
             <div class="content-container">
               <div class="content-half">
                 <h2 class="content-title">Excluir Apartamento</h2>
-                <div class="content-item">
-                  <span>Selecione um condomínio:</span>
-                  <div class="select">
-                    <select name="condominium" id="condominium">
-                      <option value="0">Selecione um Condomínio:</option>
-                      <option value="1">Residencial Ilha das Flores</option>
-                      <option value="0">Condomínio Vila do Sol</option>
-                    </select>
-                  </div>
-                </div>
 
                 <div class="content-item">
                   <span>Selecione um apartamento:</span>

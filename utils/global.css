@@ -58,6 +58,12 @@ input {
   z-index: 11;
 }
 
+.input.card-edit {
+  width: 78%;
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
 input ~ label {
   position: absolute;
   top: 0;
@@ -107,7 +113,7 @@ a:visited {
 /* Menu Section */
 
 .menu > .container {
-  width: 1200px;
+  width: 900px;
   margin: 32px auto 0;
 }
 
@@ -306,6 +312,20 @@ ul {
 .card-button {
   margin-top: 0;
   font-size: 24px;
+}
+
+.card-button.available {
+  background-color: #3CB371;
+}
+
+.card-button.occupied {
+  background-color: #FA2E27;
+}
+
+.card.selected {
+  box-shadow: inset -3px -3px 7px #ffffff73,
+              inset 3px 3px 5px rgba(94,104,121,0.288);
+  background-color: #eeeeee;
 }
 
 
